@@ -1,1 +1,4 @@
 # database-pipeline
+In this project at first I designed and created a 5NF relational database of a library containing book informations and the person who borrows it .For designing this data base I used draw.io .
+Then I built an ETL pipeline . ETL pipeline connects two databases which were created with PostgreSQL and are exactly the same . And then this systme will synchronise two data bases and check for the changes from first data base and transform it to second one any time you call it . For implementing this part of the project I used Python .
+The last part of the project I created a database warehouse which will record any changes such as insert , delete , update in database with exact time and data and whenever you update or delete a record it will automatically transformed to another database for the sake to be aware of old changes in you database .
